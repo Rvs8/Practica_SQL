@@ -1,4 +1,3 @@
-CREATE TABLE keepcoding.ivr_summary_vdn AS
 SELECT
   ivr_id AS calls_ivr_id,
   CASE
@@ -8,3 +7,4 @@ SELECT
     ELSE 'RESTO'
   END AS vdn_aggregation
 FROM keepcoding.ivr_calls;
+
