@@ -8,7 +8,7 @@ SELECT
     WHERE st.ivr_id = ca.ivr_id
       AND document_type IS NOT NULL
     LIMIT 1
-  ) AS document_type,
+  ) AS doc_type,
 
   (
     SELECT document_identification
@@ -16,6 +16,6 @@ SELECT
     WHERE st.ivr_id = ca.ivr_id
       AND document_identification IS NOT NULL
     LIMIT 1
-  ) AS document_identification
+  ) AS doc_identification
 
 FROM keepcoding.ivr_calls AS ca;
