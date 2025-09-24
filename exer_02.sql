@@ -92,3 +92,9 @@ ADD COLUMN profesor_id INTEGER REFERENCES profesores(profesor_id);
 
 ALTER TABLE profesores
 ADD COLUMN modulo_id INTEGER REFERENCES modulos(modulo_id);
+
+
+
+
+
+
