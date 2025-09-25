@@ -1,7 +1,5 @@
 SELECT
   ivr_id AS calls_ivr_id,
-
-  -- Seleccionamos un solo cliente por llamada
   (
     SELECT document_type
     FROM keepcoding.ivr_steps AS st
