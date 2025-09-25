@@ -1,7 +1,5 @@
 SELECT
   ca.ivr_id AS calls_ivr_id,
-
-  -- Seleccionamos un solo número de cliente por llamada
   (
     SELECT billing_account_id
     FROM keepcoding.ivr_steps AS st
